@@ -1,4 +1,5 @@
 /* font to be used chivo and lora */
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Lora&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +9,6 @@
     font-family: 'Chivo', monospace,serif;
     scroll-behavior: smooth;
     font-weight: normal;
-    font-family: Chivo;
 }
 
 body{
