@@ -114,6 +114,10 @@ body{
     padding: 1rem;
     margin: 1rem;
 }
+.projects .columns .column .card .imageContent h3{
+padding: .5rem 0;
+}
+
 /* my project images */
 .images.is-addon{
     width: 28em;
@@ -151,6 +155,14 @@ body{
 }
 
 /* contacts */
+.section.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact .columns .column .form{
     display: flex;
     flex-direction: column;
@@ -182,6 +194,22 @@ margin: 1rem;
     border: none;
     border-bottom: .2em solid black;
     background-color: transparent;
+
+
+    transition: .2s ease-in-out;
+
+}
+.contact .columns .column .form .inputs input:hover,
+.contact .columns .column .form .inputs input:focus,
+.contact .columns .column .form .inputs input:active,
+.contact .columns .column .form .inputs textarea:hover,
+.contact .columns .column .form .inputs textarea:focus,
+.contact .columns .column .form .inputs textarea:active
+{
+outline: none;
+
+    border:1px solid #000;
+    padding: 2px 1px;
 }
 .contact .columns .column .form .inputs textarea{
     height: 1.5rem;
@@ -196,10 +224,21 @@ margin: 1rem;
     justify-content: center;
 }
 .buttons button{
+    cursor: pointer;
+    border: none;
     padding: .3rem .5em;
     border-radius: .2em;
     background: black;
     color: #B4BFB2;
+    transition: .5s ease-in-out;
+}
+.buttons button:hover,
+.buttons button:active,
+.buttons button:focus
+{
+    border: .012em solid black;
+    color: black;
+    background: #B4BFB2;
 }
 
 /* Responsiveness */
@@ -232,6 +271,21 @@ margin: 1rem;
 @media only screen and (max-width: 500px) {
     * {
         font-size: 13px;
+    }
+    .section.hero{
+        max-height: 100vh;
+    min-height: calc(80vh - 3.25rem);
+    padding: 2rem;
+    }
+    .section.contact{
+        height: 50vh;
+    }
+    .projects .columns .column .card:nth-child(even){
+        float:none;
+    }
+    .projects .columns .column .card{
+        width:100%;
+        padding: 0;
     }
 
 }
