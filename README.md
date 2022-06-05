@@ -1,6 +1,7 @@
 # Portfolio page
 
 ***
+
 ## Creator :man_technologist:
 
 This Portfolio Page was created and is maintained by **Kelvin Njoro**
@@ -9,9 +10,11 @@ This Portfolio Page was created and is maintained by **Kelvin Njoro**
 * [Facebook](https://facebook.com/principal.kelvin1/)
 
 ## Design
+
 ### Hero section
 
 ![image](assets/images/fullPortfolioMinimalist.png "Full Minimalist Portfolio")
+
 ### Full Preview
 
 ![image](assets/images/minimalistPortfolio.png "Hero section")
@@ -79,4 +82,4 @@ For full design click [image](https://www.figma.com/file/U6Ru1E77yFuXUlK0Wbg8Le/
 ## License
 
 </p>Use it freely but please do not republish, distribute or sell</p>
-<p>Thats it! Simple, clean and smooth!
+<p>Thats it! Simple, clean and smooth!</p>
