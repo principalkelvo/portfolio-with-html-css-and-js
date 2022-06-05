@@ -9,16 +9,19 @@ function validateEmail(emailValidate) {
     return re.test(String(emailValidate).toLowerCase());
 }
 
+
 submitBtn.addEventListener('click', function () {
-    const nameValidate = nameField.value;
-    const emailValidate = emailField.value;
-    const messageValidate = messageField.value;
+    let nameValidate = nameField.value;
+    let emailValidate = emailField.value;
+    let messageValidate = messageField.value;
 
     if (!validateEmail(emailValidate)) {
         emailField.style.borderColor = "red";
         alert("Email is not valid");
     } else {
         console.log("Email is valid");
+        emailField.style.borderColor = "black";
+
     }
     if (nameValidate === ''|| nameValidate.length < 2) {
         nameField.style.borderColor = "red";
@@ -26,27 +29,31 @@ submitBtn.addEventListener('click', function () {
         return;
     } else {
         console.log("name is valid");
+        emailField.style.borderColor = "black";
     }
-    if (messageValidate === ''|| messageValidate.length <= 1) {
+    if (messageValidate === " "|| messageValidate.length <= 1) {
         messageField.style.borderColor = "red";
         alert("message is too short");
         return;
     } else {
         console.log("message is valid");
+        emailField.style.borderColor = "black";
     }
 
     // add new user to messages array
-    for (var i = 0; i < messages.length; i++){
-        console.log("hello")
-        const newMessage = {
-            name: nameValidate,
-            email: emailValidate,
-            message: messageValidate
-        }
-        messages.push(newMessage);
-        console.log(newMessage)
-        // alert("Message sent Successful");
-    }
-    console.log("hello too")
-    
+    messageSent(nameValidate,emailValidate,messageValidate);
+    nameField.value= '';
+    emailField.value= '';
+    messageField.value= '';
 })
+function messageSent(nameValidate,emailValidate,messageValidate){
+    const newMessage = {
+        name: nameValidate,
+        email: emailValidate,
+        message: messageValidate
+    }
+  
+    messages.push(newMessage);
+    console.log(messages)
+    alert("Message sent Successful");
+}
