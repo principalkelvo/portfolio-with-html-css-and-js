@@ -11,11 +11,11 @@ This Portfolio Page was created and is maintained by **Kelvin Njoro**
 
 ## Design
 
-### Hero section
+### Full Preview
 
 ![image](assets/images/fullPortfolioMinimalist.png "Full Minimalist Portfolio")
 
-### Full Preview
+### Hero Preview
 
 ![image](assets/images/minimalistPortfolio.png "Hero section")
 For full design click [image](https://www.figma.com/file/U6Ru1E77yFuXUlK0Wbg8Le/Minimal-Portfolio?node-id=0%3A1)
